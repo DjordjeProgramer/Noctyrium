@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noctyrium</title>
+  <link rel="icon" type="image/png" href="Images/NoctyriumSignature.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="navbar-container">
+        <div class="logo">
+          <a href=""><img src="Images/Logo.png" alt="Noctyrium Logo"></a>
+        </div>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="#"><i class="fas fa-cogs"></i>Services</a></li>
+            <li><a href="#"><i class="fas fa-file-alt"></i>Docs</a></li>
+            <li><a href="#"><i class="fas fa-home"></i>About</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+          </ul>
+        </div>
+        <br>
+        <ul>
+            <li><button onclick="addLanguage('en')">English</button></li>
+            <li><button onclick="addLanguage('es')">Español</button></li>
+            <li><button onclick="addLanguage('fr')">Français</button></li>
+          </ul>
+
+        <!-- Right Side: Search Box and CTA Button -->
+        <div class="right-side">
+          <input type="text" class="search-box" placeholder="Search...">
+          <button class="search-button"><i class="fas fa-search"></i></button>
+          <button class="cta-button">Get Started</button>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Fullscreen Overlay Menu -->
+  <div id="overlay" class="overlay">
+    <div class="overlay-content">
+      <ul>
+        <li><a href="#"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#"><i class="fas fa-file-alt"></i> Docs</a></li>
+        <li><a href="#"><i class="fas fa-home"></i> About</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="Navbar.js"></script>
+</body>
+<script src="DomainName.js"></script>
+</html>

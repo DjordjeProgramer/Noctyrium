@@ -1,0 +1,257 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Section */
+.logo {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Nav Links (Hidden on Mobile) */
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Hover Effects for Links */
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    padding: 5px 15px;
+}
+
+/* Icons for Links */
+.nav-links i {
+    font-size: 16px;
+    color: #2e8b57;
+}
+
+/* Right Side (Search Box, Search Button, Get Started Button) */
+.right-side {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-box {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    outline: none;
+    width: 200px;
+    border: 2px;
+    border-color: green;
+}
+
+.search-button {
+    padding: 8px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #2e8b57;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3b9e6b;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+/* Fullscreen Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.overlay-content a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.overlay-content a:hover {
+    background-color: #2e8b57;
+}
+
+/* Language Selection */
+/* Language Selection */
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+  ul li button {
+    background-color: transparent;
+    border: 2px solid #2e8b57; /* Add a border to match the color theme */
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    font-weight: 500; /* Make the font a bit bolder */
+  }
+  
+  ul li button:hover {
+    background-color: rgba(46, 139, 87, 0.2); /* Lighter background on hover */
+    color: #2e8b57; /* Change text color to the button border color */
+    border-color: #2e8b57; /* Change border color on hover */
+  }
+  
+  ul li button:focus {
+    outline: none; /* Remove the default outline on focus */
+    box-shadow: 0 0 10px rgba(46, 139, 87, 0.6); /* Add a glowing effect when focused */
+  }
+  
+  
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links on small screens */
+    }
+
+    .right-side {
+        margin-top: 15px;
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 150px;
+    }
+
+    .navbar-container {
+        padding: 10px;
+    }
+
+    .nav-links ul {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .right-side {
+        margin-top: 10px;
+        display: none;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
