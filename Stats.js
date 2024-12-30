@@ -4,7 +4,7 @@ function animateNumbers() {
         { id: 'customers', endValue: 100 },
         { id: 'projects', endValue: 200 },
         { id: 'rates', endValue: 80 },
-        { id: 'experience', endValue: 10 }
+        { id: 'experience', endValue: 5 }
     ];
 
     stats.forEach(stat => {
