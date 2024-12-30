@@ -1,0 +1,140 @@
+/* Docs Section Styles */
+.docs-section {
+    background: linear-gradient(green, black); /* Dark green to black gradient */
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Animation for section fade-in */
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #094621; /* Dark green accent color */
+    transform: translateY(-20px);
+    animation: slideIn 0.8s ease-out forwards; /* Slide-in animation for title */
+}
+
+.section-intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards 0.5s; /* Animation for intro fade-in */
+}
+
+.docs-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards 1s; /* Categories fade-in with delay */
+}
+
+.category {
+    background-color: #000; /* Black background */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: categoryIn 0.6s ease-out forwards; /* Animation for category entry */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.category p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.category:hover {
+    transform: translateY(-10px); /* Hover effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.docs-link {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #006400; /* Dark green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1.5s; /* Animation for link fade-in */
+}
+
+.docs-link:hover {
+    background-color: #004d00; /* Darker green */
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.back-to-top {
+    background-color: #006400;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 3rem;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s forwards 2s; /* Fade-in animation for back-to-top */
+}
+
+.back-to-top:hover {
+    background-color: #004d00;
+    transform: translateY(-5px); /* Hover effect */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in animation for title */
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Category animation */
+@keyframes categoryIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .category {
+        padding: 1.5rem;
+    }
+
+    .docs-link {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

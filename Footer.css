@@ -1,0 +1,119 @@
+/* Footer Section Styling */
+.footer {
+    background: linear-gradient(green, black);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-title {
+    font-size: 2.5rem;
+    color: #015220; /* Dark Green */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer-description {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.footer-center {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-center h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #006400; /* Dark Green on hover */
+}
+
+.footer-right {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-right h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Hover Effect on Links */
+.footer-links a:hover, .footer-contact a:hover {
+    color: #006400;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .footer-bottom {
+        margin-top: 2rem;
+    }
+}

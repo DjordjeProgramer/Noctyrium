@@ -1,0 +1,116 @@
+/* Contact Section Styling */
+.contact-section {
+    background: linear-gradient(green, black);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    transform: perspective(1500px) rotateY(0deg);
+    transition: transform 0.5s ease;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    color: #015220;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #fff;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #006400; /* Dark green */
+    transform: translateY(-5px);
+}
+
+.submit-btn {
+    background-color: #006400;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #004d00;
+    transform: translateY(5px);
+}
+
+/* 3D Hover Effect */
+.contact-form-container:hover {
+    transform: perspective(1500px) rotateY(10deg);
+}
+
+.contact-form-container:hover .contact-title {
+    transform: translateY(-10px) rotateX(5deg);
+}
+
+.contact-form-container:hover .form-group input,
+.contact-form-container:hover .form-group textarea {
+    transform: translateY(5px) rotateX(-5deg);
+}
+
+.contact-form-container:hover .submit-btn {
+    transform: translateY(10px) rotateX(5deg);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}

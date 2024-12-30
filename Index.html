@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,15 @@
   <link rel="icon" type="image/png" href="Images/NoctyriumSignature.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="Index.css">
+  <link rel="stylesheet" href="Hero.css">
+  <link rel="stylesheet" href="Services.css">
+  <link rel="stylesheet" href="Docs.css">
+  <link rel="stylesheet" href="About.css">
+  <link rel="stylesheet" href="Contact.css">
+  <link rel="stylesheet" href="Stats.css">
+  <link rel="stylesheet" href="Footer.css">
 </head>
+
 <body>
   <header>
     <nav>
@@ -53,6 +62,235 @@
     </div>
   </div>
 
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-left">
+      <h1>Grow up with Noctyrium</h1>
+      <p>Your gateway to amazing possibilities.</p>
+      <button class="btn">Get Started</button>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-header">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+      </div>
+      <div class="terminal-content" id="terminalContent">
+        <pre><span class="code"></span>
+<span class="output"></span></pre>
+      </div>
+    </div>
+  </div>
+  <!-- Services Section -->
+  <section id="advanced-services" class="services-section">
+    <h2 class="section-title">Our Advanced Services</h2>
+    <div class="services-container">
+      <!-- Video Editing -->
+      <div class="service-card">
+        <i class="fas fa-globe service-icon"></i>
+        <h3>Video Editing</h3>
+        <p>Let us edit your video and bring it to life.</p>
+        <button class="service-btn">Learn More</button>
+      </div>
+      <!-- Personal Website -->
+      <div class="service-card">
+        <i class="fas fa-globe service-icon"></i>
+        <h3>Personal Website</h3>
+        <p>Create your own personal website to showcase your work and achievements.</p>
+        <button class="service-btn">Learn More</button>
+      </div>
+
+      <!-- Business Website -->
+      <div class="service-card">
+        <i class="fas fa-building service-icon"></i>
+        <h3>Business Website</h3>
+        <p>Launch a professional website to represent your business online.</p>
+        <button class="service-btn">Learn More</button>
+      </div>
+
+      <!-- Portfolio -->
+      <div class="service-card">
+        <i class="fas fa-briefcase service-icon"></i>
+        <h3>Portfolio</h3>
+        <p>Showcase your skills, projects, and achievements with a beautiful portfolio website.</p>
+        <button class="service-btn">Learn More</button>
+      </div>
+
+      <!-- Discord Bot -->
+      <div class="service-card">
+        <i class="fas fa-robot service-icon"></i>
+        <h3>Discord Bot</h3>
+        <p>Get your custom Discord bot to automate tasks, engage users, and improve your server.</p>
+        <button class="service-btn">Learn More</button>
+      </div>
+
+      <!-- Social Media Management -->
+      <div class="service-card">
+        <i class="fas fa-share-alt service-icon"></i>
+        <h3>Social Media Management</h3>
+        <p>Improve your online presence with professional social media management services.</p>
+        <button class="service-btn">Learn More</button>
+      </div>
+    </div>
+  </section>
+  <!-- Docs -->
+  <section id="docs" class="docs-section">
+    <div class="container">
+      <!-- Section Title -->
+      <h2 class="section-title">Noctyrium Documentation</h2>
+
+      <!-- Introduction -->
+      <p class="section-intro">
+        Welcome to Noctyrium's Documentation Hub! Find everything you need to get started with our products and
+        services.
+      </p>
+
+      <!-- Documentation Categories -->
+      <div class="docs-categories">
+        <div class="category">
+          <h3>Video Documentation</h3>
+          <p>Learn about our video editing services, explore mechanics, and get tips for beginners.</p>
+          <a href="#game-docs" class="docs-link">Learn More</a>
+        </div>
+        <div class="category">
+          <h3>API Documentation</h3>
+          <p>Detailed documentation for developers to integrate Noctyrium's tools into their projects.</p>
+          <br>
+          <a href="#api-docs" class="docs-link">Learn More</a>
+        </div>
+        <div class="category">
+          <h3>Services Documentation</h3>
+          <p>Everything you need to know about our services, from creating personal websites to developing Discord bots.
+          </p>
+          <a href="#services-docs" class="docs-link">Learn More</a>
+        </div>
+        <div class="category">
+          <h3>FAQ & Troubleshooting</h3>
+          <p>Get help with common issues, or find answers to frequently asked questions.</p>
+          <a href="#faq" class="docs-link">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Back to Top Button -->
+      <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to Top</button>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <!-- Left Column: About Content -->
+      <div class="about-left">
+        <h2 class="about-title">About Noctyrium</h2>
+        <p class="about-description">
+          Noctyrium is a visionary company dedicated to helping small creators succeed. We bring together innovation,
+          creativity, and technology to offer a wide range of services that empower creators to grow and thrive.
+          <br><br>
+          Our mission is to support small businesses, content creators, and influencers by providing the tools and
+          services they need to expand their reach and enhance their online presence. Whether you're looking for a
+          personal website, a business site, or a custom Discord bot, Noctyrium is here to help you every step of the
+          way.
+          <br><br>
+          At Noctyrium, we are passionate about supporting small creators and giving them the tools to succeed in the
+          digital world. Together, we can make your vision a reality.
+        </p>
+        <a href="#contact" class="about-btn">Get in Touch</a>
+      </div>
+
+      <!-- Right Column: About Image -->
+      <div class="about-right">
+        <div class="about-image">
+          <img src="Images/Logo.png" alt="Noctyrium" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-section">
+    <div class="contact-form-container">
+      <h2 class="contact-title">Contact Us</h2>
+      <p class="contact-description">
+        Have any questions? Feel free to reach out to us. We’d love to hear from you.
+      </p>
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="6b76384a-aa97-4515-8d43-f95e601b4072">
+
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <!-- Statistics -->
+  <section class="stats-section">
+    <div class="stat-item">
+      <h3>Customers Satisfied</h3>
+      <p class="stat-number" id="customers">0</p>
+    </div>
+    <div class="stat-item">
+      <h3>Projects Completed</h3>
+      <p class="stat-number" id="projects">0</p>
+    </div>
+    <div class="stat-item">
+      <h3>Positive Rates</h3>
+      <p class="stat-number" id="rates">0</p>
+    </div>
+    <div class="stat-item">
+      <h3>Years of Experience</h3>
+      <p class="stat-number" id="experience">0</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3 class="footer-title">Noctyrium</h3>
+        <p class="footer-description">Helping small creators grow with innovative services. From custom websites to
+          Discord bots, we are your digital growth partner.</p>
+      </div>
+      <div class="footer-center">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Services</a></li>
+          <li><a href="#about">Docs</a></li>
+          <li><a href="#services">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h4>Contact Info</h4>
+        <ul class="footer-contact">
+          <li><strong>Name:</strong> Noctyrium</li>
+          <li><strong>Email:</strong> noctyrium@gmail.com</li>
+          <li><strong>Location:</strong> Belgrade, Serbia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Noctyrium. All Rights Reserved.</p>
+    </div>
+  </footer>
+
   <script src="Navbar.js"></script>
+  <script src="Hero.js"></script>
+  <script src="Docs.js"></script>
+  <script src="Stats.js"></script>
 </body>
+
 </html>

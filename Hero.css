@@ -1,0 +1,138 @@
+.hero {
+    display: flex;
+    width: 100%;
+    height: 95vh; /* Default height */
+    justify-content: center;
+    align-items: center;
+    background: url('Images/HeroSectionWallpaper.jpg') no-repeat center center/cover;
+    gap: 2rem;
+}
+
+.hero-left {
+    max-width: 40%;
+    text-align: center;
+    transform: translateX(-10%);
+}
+
+.hero-left h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-left p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-left .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, darkgreen, black);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.hero-left .btn:hover {
+    transform: scale(1.1);
+}
+
+.terminal {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 45%;
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    transform: translateX(15%);
+}
+
+.terminal-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.terminal-header span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.terminal-header .red {
+    background: #ff5f56;
+}
+
+.terminal-header .yellow {
+    background: #ffbd2e;
+}
+
+.terminal-header .green {
+    background: #27c93f;
+}
+
+.terminal-content {
+    flex: 1;
+    overflow-y: auto;
+    color: lightgreen;
+}
+
+.code {
+    color: cyan;
+}
+
+.output {
+    color: white;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    /* Hide the terminal on small screens */
+    .terminal {
+        display: none;
+    }
+
+    /* Adjust hero section for mobile */
+    .hero {
+        flex-direction: column;
+        height: 88vh; /* Ensure the hero section takes full height on mobile */
+        padding: 1rem; /* Adjust padding to fit content */
+    }
+
+    .hero-left {
+        max-width: 90%; /* Increase width on smaller screens */
+        transform: none; /* Remove transform for a better view */
+        margin-bottom: 1rem;
+    }
+
+    .hero-left h1 {
+        font-size: 2.5rem; /* Adjust font size for mobile */
+    }
+
+    .hero-left p {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .hero-left .btn {
+        padding: 0.8rem 1.5rem; /* Adjust button size */
+        font-size: 0.9rem;
+    }
+}
