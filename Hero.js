@@ -1,12 +1,18 @@
 const terminalContent = document.getElementById('terminalContent');
 const commands = [
-    { code: 'console.log("Welcome to Noctyrium!");' },
-    { code: 'const goals = ["Innovation", "Growth", "Excellence"];' },
-    { code: 'goals.forEach(goal => console.log(`- ${goal}`));' },
+    { code: '1. console.log("Welcome to Noctyrium!");' },
+    { code: '2. const goals = ["Innovation", "Growth", "Excellence"];' },
+    { code: '3. goals.forEach(goal => console.log(`- ${goal}`));' },
     { output: 'Welcome to Noctyrium!' },
     { output: '- Innovation' },
     { output: '- Growth' },
-    { output: '- Excellence' }
+    { output: '- Excellence' },
+    { code: '4. function greet(name) {' },
+    { code: '5.   return `Hello, ${name}! Welcome back.`;' },
+    { code: '6. }' },
+    { code: '7. const user = "Creator";' },
+    { code: '8. console.log(greet(user));' },
+    { output: 'Hello, Creator! Welcome back.' },
 ];
 
 let index = 0;
