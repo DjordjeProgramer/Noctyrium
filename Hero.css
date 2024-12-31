@@ -54,13 +54,6 @@
     transform: translateX(15%);
 }
 
-.terminal-header h2 {
-    font-size: 1rem;
-    color: white;
-    margin: 0 auto; /* Center the title */
-    text-align: center;
-    flex-grow: 1; /* Allow the title to use available space */
-}
 
 .terminal-header {
     display: flex;
